@@ -1,0 +1,56 @@
+@keyframes switchPage{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+.loginBox, .SignUpBox{
+    width:25em;
+    height:18em;
+    margin: 12em auto;
+    text-align: center;
+    background-color:gray;
+    position: relative;
+    box-shadow: 0em 0em 1em rgb(253, 253, 253);
+    transition: 4000ms ease-in-out;
+    overflow: hidden;
+    animation: 1.5s ease-in-out 0s 1 switchPage;
+}
+
+.loginBox:hover, .SignUpBox:hover{
+    box-shadow: 2em 4em 5em 35em black;
+    transform: scale3d(1.5, 1.5, 1.5);
+    border-radius: 3em;
+}
+
+.loginBox p, .SignUpBox p{
+    text-align: center;
+    text-shadow: 8em;
+}
+
+.inputFields{
+    margin: 0 auto;
+}
+
+.loginSubmit{
+    background-color: rgb(255, 255, 255);
+    transition: 2500ms;
+}
+
+.loginSubmit:hover{
+    background-color: rgb(78, 78, 22);
+    color:blue
+}
+
+form {
+    margin: 0 auto;
+    position: absolutw;
+}
+
+html{
+    background-color: rgb(68, 18, 18);
+    color:white;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+    <body>
+    <head>
+        <script src="../JS/imageChange.js"></script>
+        <link rel="stylesheet" href="../CSS/imageCSS.css"/>
+        <div>
+            <a href="myProjects.html" class = "back"> Back to projects</a>
+        </div>
+    </head>
+    <title>JavaFun</title>
+        <!--Generates a image-->
+        <h1><p class = "Header_Title"> Welcome to my generator </p></h1>
+        <img src="" class = "paintingImg" id = "images">
+        <button type ="button" id="imageButton" onclick="changeImage()">Change Image</button>
+        <!--Enter a color-->
+        <form>
+            <label id = "label_text">Enter a color:</label>
+            <input type="text" id = "bgText">
+            <button type="button" value ="submit" id="submitColor" onclick="changeColor()">Change background</button>
+        </form>
+        <br>
+        <div class="calculatorFrame">
+            <div class="resultDisplay">
+                <p id="result"></p>  
+            </div>
+            <div class = "buttons">
+                <div class = "btnGroup1">
+            <form>
+                    <input type = "button" class = "calcButton" id = "plus" value ="+">
+                    <input type = "button" class = "calcButton" id = "minus" value ="-">
+                    <input type = "button" class = "calcButton" id = "times" value ="x">
+                    <input type = "button" class = "calcButton" id = "divided" value ="/">
+                </div>
+                <div class = "btnGroup2">
+                    <input type = "button" class = "calcButton" id = "one" value ="1">
+                    <input type = "button" class = "calcButton" id = "two" value ="2">
+                    <input type = "button" class = "calcButton" id = "three" value ="3">
+                    <input type = "button" class = "calcButton" id = "four" value ="4">
+                </div>
+                <div class = "btnGroup3">
+                    <input type = "button" class = "calcButton" id = "five" value ="5">
+                    <input type = "button" class = "calcButton" id = "six" value ="6">
+                    <input type = "button" class = "calcButton" id = "seven" value ="7">
+                    <input type = "button" class = "calcButton" id = "eight" value ="8">
+                </div>
+                <div class = "btnGroup4">
+                    <input type = "button" class = "calcButton" id = "nine" value ="9">
+                    <input type = "button" class = "calcButton" id = "clear" onclick="ClearValue()" value ="C">
+                    <input type = "button" class = "calcButton" id = "decimal" value =".">
+                    <input type = "button" class = "equals" id = "equals" onclick="calculator()" value ="=">
+                </form>
+                </div>
+        </div>
+        </div>
+    </body>
+</html>

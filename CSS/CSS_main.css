@@ -1,0 +1,287 @@
+.navMenu{
+    border: 8px;
+    border-style: solid;
+    border-color:rgb(113, 57, 57);
+    border-radius: 20px;
+    background-color: rgb(16, 20, 21);
+    max-width: 7em;
+    font-size: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.navMenu a{
+    color: darkolivegreen;
+}
+
+.navMenu a:hover{
+    background-color: rgb(172, 173, 177);
+    cursor: pointer;
+}
+
+.projectNavMenu{
+    border: 4px;
+    border-style: solid;
+    border-color:rgb(113, 57, 57);
+    border-radius: 30px;
+    background-color: rgb(16, 20, 21);
+    max-width: 15%;
+    max-height: auto;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projectNavMenu a{
+    padding:2%;
+    color: darkolivegreen;
+}
+
+.projectNavMenu a:hover{
+    background-color: rgb(172, 173, 177);
+}
+
+.myPhoto{
+    max-width: 25%;
+    height:70%;
+    box-shadow:-18px 15px 18px black;
+    border-radius: 20px;
+    animation-name: photoIn;
+    animation-duration: 2.5s;
+    position: absolute;
+    right: 2em;
+    top: 8em;
+}
+
+.quote{
+    position: relative;
+    bottom: 2em;
+    left: 3em;
+    max-width: 53em;
+}
+
+.quote_text{
+    font-family: sunset_boulevard_2;
+    font-size: 3em;
+    color:rgb(11, 11, 11);
+    text-shadow: .2em .2em 10px white;
+    max-height: 200px;
+}
+
+.WhoAmI{
+    width: 100%;
+    max-height: 100dvh;
+    overflow: hidden;
+}
+
+.education {
+    position: absolute;
+    top: 30em;
+    left: 10em;
+    justify-content: center;
+}
+
+.skills{
+    bottom: 3em;
+    color: white;
+    font-size: 20px;
+    text-align:center;
+    position: relative  ;
+    top: 40em;
+    justify-content: center;
+}
+
+.getToKnowMe{
+  position: relative;  
+  text-align: center;
+  top:50em;
+}
+
+.indent{
+    text-indent: 30px;
+}
+
+.name{
+    color:white;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-align: left;
+}
+
+h1 p{
+    background-color: darkorange;
+    margin: 0 auto;
+    max-width:28%;
+    text-align: center;
+    justify-content: center;
+    border:20%;
+    border-radius:25px;
+}
+
+.contact{
+    text-align: center; 
+    margin: 0 auto;
+    display: block;
+    color:rgb(22, 203, 212);
+}
+
+.ContactMe{
+    opacity: 50%;
+}
+.ContactMe:hover{
+    opacity: 100%;
+}
+
+.submitButton{
+    margin: 0 auto;
+    display:block;
+    width:10%;
+    font-size: 20px;
+}
+
+.container{
+    display:flex;
+    gap: 2em;
+}
+.Cards{
+    box-shadow:18px 15px 9px black;
+    background-color: rgb(71, 65, 65);
+    border-radius: 30px;
+    margin: 0 auto;
+    transition: all 4000ms;
+    max-width: 20em;
+    overflow: hidden;
+}
+
+.CardInfo{
+    padding: 2px 16px;
+    background-color: rgb(71, 65, 65);
+    height: auto;
+}
+
+.cardImg{
+    width:100%;
+}
+
+#calc{
+    width: 110%;
+}
+
+.CardInfo h2{
+    text-align: center;
+}
+
+.Cards:hover{
+    box-shadow:-20px -30px 18px black;
+    max-width:30em;
+}
+
+li{
+    color:white;
+    font-size:20px;
+    list-style: none;
+}
+
+ul{
+    color:white;
+    font-size:20px;
+}
+form{
+    color:white;
+    
+}
+
+label{
+    display: inline-block;
+    text-align: right;
+    width:43%;
+}
+
+input{
+    display: inline-block;
+    padding:4px 8px;
+}
+
+html{
+    background:linear-gradient(45deg, red,green,pink );
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130em;
+}
+
+.css{
+    max-width: 10em;
+}
+
+.css3{
+    max-width: 14em;
+    position: relative;
+    top:2em;
+}
+
+.css4{
+    max-width: 13em;
+    position: relative;
+    left:0em;
+    top:1em;
+}
+
+@font-face{
+    font-family:sunset_boulevard_2;
+    src:url(../sunset_boulevard_2/SunsetBoulevard-Regular.woff2);
+}
+
+@keyframes photoIn{
+    0%{
+        transform:translateX(20em);
+    }
+    
+    100%{
+        transform:translateX(0em);
+    }
+}
+
+/* Mobile small - 320px*/
+@media (min-width:320px){
+    h1 p{
+       max-width: 50%;
+       height: 20%;
+       text-overflow: clip;
+       overflow: hidden;
+       font-size: 1em; 
+       border-radius: 10px;
+       border: 40%;
+       margin: 0 auto;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .myPhoto{
+        animation-name: photoIn;
+        animation-duration: 2.5s; 
+        position: absolute;
+        right: -1em;
+        top: 8em;
+        
+    }
+}
+/* Mobile medium - 375px */
+
+/* Mobile Large - 425px*/
+
+/* Tablet - 768px*/
+
+/* Laptop - 1024px*/
+@media only screen and (max-width:1024px) {
+    .myPhoto{
+        min-width:10%;
+        height: auto;
+    }
+}

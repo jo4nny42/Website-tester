@@ -1,0 +1,95 @@
+.Header_Title{
+    color:rgb(58, 176, 176);
+}
+
+.calculatorFrame{
+    background-color:rgb(255, 255, 255);
+    box-shadow: 2em 4em 5em rgb(142, 74, 74);
+    width: 20em;
+    height: 25em;
+    overflow: hidden;
+    justify-content: center;
+    display:inline-block;
+    padding: .25em;
+    transition: all 6s;
+    transform:translate(30px,10px);
+    border: 1em;
+    border-radius:.1em;
+    border-style: ridge;
+    border-color: rgb(72, 50, 54);
+}
+
+.resultDisplay{
+    background-color:rgb(254, 254, 254);
+    box-shadow: 0.25em 0.75em 1em rgb(78, 54, 54);
+    border:12em;
+    border-radius: 1em;
+    height:4em;
+}
+
+.resultDisplay p{
+    text-align: center;
+    padding: 1em;
+}
+
+.buttons button{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.equals{
+    background-color:blue;
+    color:white;
+    display: inline-block;
+    margin:auto;
+}
+
+.calcButton, .equals{
+    width: 3em;
+    height:3em;
+}
+
+.buttons{
+    padding: 4em;
+}
+
+body{
+    text-align: center;
+    max-width:auto;
+    max-height:auto;
+}
+
+button{
+    margin: 0 auto;
+    display: block;
+}
+
+.paintingImg{
+    max-width:16em;
+    border: 0.75em;
+    border-style: ridge;
+    border-color:brown;
+    transform: rotate3d(5,20,20,-25deg);
+    transition: all 3.5s;
+}
+
+.paintingImg:hover{
+    box-shadow: 3em 4em 3em rgb(15, 15, 15);
+    transform: rotate3D(10,40,40,0deg);
+}
+
+.back{
+    border: 5px;
+    border-width: 0.75em;
+    border-style: ridge;
+    border-color: rgb(74, 53, 32);
+    width: 10em;
+    margin: 0 auto;
+    color: red;
+}
+
+label{
+    color: black;
+    margin: 0 auto;
+    display: block;
+}
