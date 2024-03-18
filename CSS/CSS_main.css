@@ -43,13 +43,12 @@
 
 .myPhoto{
     max-width: 25%;
-    height:70%;
     box-shadow:-18px 15px 18px black;
     border-radius: 20px;
     animation-name: photoIn;
     animation-duration: 2.5s;
     position: absolute;
-    right: 2em;
+    right: 4em;
     top: 8em;
 }
 
@@ -57,28 +56,51 @@
     position: relative;
     bottom: 2em;
     left: 3em;
-    max-width: 53em;
+    width: 40em;
+    justify-content: center;
 }
 
 .quote_text{
     font-family: sunset_boulevard_2;
-    font-size: 3em;
+    font-size: 3rem;
     color:rgb(11, 11, 11);
     text-shadow: .2em .2em 10px white;
     max-height: 200px;
+    max-width: 85%;
 }
 
 .WhoAmI{
     width: 100%;
     max-height: 100dvh;
-    overflow: hidden;
+    display: flex;
+    /*overflow: hidden;*/
 }
 
 .education {
-    position: absolute;
-    top: 30em;
-    left: 10em;
+    display: flex;
+    font-family: sunset_boulevard_2;
+    border:40%;
+    border-radius:25em;
+    border-color:red;
+}
+
+.title2{
+    background-color: darkorange;
+    margin: 0 auto;
+    max-width:100%;
+    justify-content:center;
+    border:40%;
+    border-radius:25px;
+}
+
+.title1{
+    background-color: darkorange;
+    margin: 0 auto;
+    max-width:100%;
+    text-align: center;
     justify-content: center;
+    border:20%;
+    border-radius:25px;
 }
 
 .skills{
@@ -86,8 +108,6 @@
     color: white;
     font-size: 20px;
     text-align:center;
-    position: relative  ;
-    top: 40em;
     justify-content: center;
 }
 
@@ -115,7 +135,7 @@ p{
 h1 p{
     background-color: darkorange;
     margin: 0 auto;
-    max-width:28%;
+    max-width:100%;
     text-align: center;
     justify-content: center;
     border:20%;
@@ -211,7 +231,6 @@ html{
     background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
-    height: 130em;
 }
 
 .css{
@@ -238,7 +257,7 @@ html{
 
 @keyframes photoIn{
     0%{
-        transform:translateX(20em);
+        transform:translateX(16rem);
     }
     
     100%{
@@ -246,8 +265,8 @@ html{
     }
 }
 
-/* Mobile small - 320px*/
-@media (min-width:320px){
+/* Mobile small - 320px
+@media only screen and (min-width:320px){
     h1 p{
        max-width: 50%;
        height: 20%;
@@ -264,24 +283,14 @@ html{
     }
 
     .myPhoto{
-        animation-name: photoIn;
-        animation-duration: 2.5s; 
         position: absolute;
-        right: -1em;
-        top: 8em;
-        
+        right: -8em;
+        top: 6em;
+        width: 28%;
     }
-}
+} */
 /* Mobile medium - 375px */
 
 /* Mobile Large - 425px*/
 
 /* Tablet - 768px*/
-
-/* Laptop - 1024px*/
-@media only screen and (max-width:1024px) {
-    .myPhoto{
-        min-width:10%;
-        height: auto;
-    }
-}
