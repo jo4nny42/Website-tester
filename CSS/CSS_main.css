@@ -8,6 +8,7 @@
     font-size: 20px;
     margin: 0 auto;
     justify-content: center;
+    display: flex;
 }
 .navMenu a{
     color: darkolivegreen;
@@ -71,9 +72,9 @@
 
 .WhoAmI{
     width: 100%;
-    max-height: 100dvh;
     display: flex;
-    /*overflow: hidden;*/
+    justify-content: center;
+    text-align: center;
 }
 
 .education {
@@ -82,25 +83,26 @@
     border:40%;
     border-radius:25em;
     border-color:red;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
 }
 
 .title2{
-    background-color: darkorange;
-    margin: 0 auto;
     max-width:100%;
-    justify-content:center;
-    border:40%;
-    border-radius:25px;
+    margin: 0 auto;
+    color:black;
 }
 
 .title1{
     background-color: darkorange;
     margin: 0 auto;
-    max-width:100%;
+    max-width:35%;
     text-align: center;
-    justify-content: center;
-    border:20%;
+    border:10%;
     border-radius:25px;
+    display: flex;
+    justify-content: center;
 }
 
 .skills{
@@ -130,16 +132,6 @@ p{
     text-align: center;
     font-size: 30px;
     text-align: left;
-}
-
-h1 p{
-    background-color: darkorange;
-    margin: 0 auto;
-    max-width:100%;
-    text-align: center;
-    justify-content: center;
-    border:20%;
-    border-radius:25px;
 }
 
 .contact{
@@ -227,7 +219,7 @@ input{
 }
 
 html{
-    background:linear-gradient(45deg, red,green,pink );
+    background-color:rgb(15, 131, 173);/*linear-gradient(45deg, red,green,pink );*/
     background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -256,6 +248,16 @@ html{
 }
 
 @keyframes photoIn{
+    0%{
+        transform:translateX(16rem);
+    }
+    
+    100%{
+        transform:translateX(0em);
+    }
+}
+
+@keyframes wordsSLide{
     0%{
         transform:translateX(16rem);
     }
