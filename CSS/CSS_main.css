@@ -3,11 +3,12 @@
     min-width: 149px;
     width: 20%;
     text-align: center;
-    border:10%;
+    text-shadow: .2em 1em 10px rgb(255, 255, 255);
+   /* border:10%;
     border-radius:25px;
     border-style: solid;
     border-color: black;
-    background-color: green;
+    background-color: green;*/
 }
 .navMenu a{
     color: rgb(223, 226, 218);
@@ -46,24 +47,41 @@
     box-shadow:-18px 15px 18px black;
 }
 
+.meContainer{
+    display:flex;
+    flex-direction: row;
+}
+
 .KnowMe{
-    display: flex;
     border:10%;
     border-radius:25px;
     border-style: solid;
     border-color: black;
     background-color: green;
     font-family: sunset_boulevard_2;
+    margin: 20px auto ;
+    max-width: 100%;
+    min-width: 469.33px;
+    max-height: 150px;
+    overflow: hidden;
+    animation-name: photoIn;
+    animation-duration: 2.5s;
+    transition: linear 2s ease-in;
+}
+
+.Info p{
+    font-size: 1.8em;
 }
 
 .photo{
     max-width: 50%;
+    display: flex;
 }
 
 .myPhoto{
     max-width: 25%;
     min-width: 140px;
-    box-shadow:-18px 15px 18px black;
+    box-shadow:-10px 15px 18px black;
     border: 4px;
     border-style: solid;
     border-radius:20px;
@@ -71,6 +89,9 @@
     animation-name: photoIn;
     animation-duration: 2.5s;
     transition: linear 2s ease-in;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 20px auto;
 }
 
 .WhoAmI{
@@ -86,28 +107,23 @@
     width: 40em;
     justify-content: center;
     overflow: hidden;
-    border:10%;
-    border-radius:25px;
-    border-style: solid;
-    border-color: black;
-    background-color: green;
     animation-name: words;
     animation-duration: 2.5s;
     transition: linear 2s ease-in;
     text-align: center;
+    flex-grow: 3; 
 }
 
 .quote_text{
     font-family: sunset_boulevard_2;
-    min-width: 414px;
     font-size: 2em;
     color:rgb(11, 11, 11);
-    text-shadow: .2em .2em 10px white;
+    text-shadow: .2em .5em 10px rgb(255, 255, 255);
     max-height: 200px;
     max-width: 100%;
-    flex-grow: 3; 
+    min-width: 882px;
     align-self: flex-start;
-    
+    color:white;
 }
 
 .education {
@@ -247,12 +263,8 @@ input{
 }
 
 html{
-    /*background:linear-gradient(45deg, red,green,pink );*/
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: black;
-    animation: backgroundChange 60s infinite linear;
+    background-color: rgb(28, 28, 99);
+    /*animation: backgroundChange 60s infinite linear;*/
 }
 
 .css{
@@ -300,22 +312,37 @@ html{
 @keyframes backgroundChange{
     0%{
         background:linear-gradient(45deg, red,green,pink );
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     25%{
         background:linear-gradient(45deg, rgb(0, 255, 166),rgb(210, 195, 65),rgb(110, 98, 100) );
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     50%{
         background:linear-gradient(45deg, rgb(254, 128, 162),green,pink );
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     75%{
         background:linear-gradient(45deg, rgb(65, 63, 63),rgb(17, 148, 255),rgb(197, 166, 13) );
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     100%{
         background:linear-gradient(45deg, red,green,pink );
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
