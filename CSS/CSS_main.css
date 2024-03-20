@@ -1,11 +1,19 @@
 .navMenu{
     display: flex;
-    border: 4px;
+    margin: 40px auto;
+    min-width: 149px;
+    max-width:35%;
+    text-align: center;
+    border:10%;
+    border-radius:25px;
     border-style: solid;
-    border-radius: 20px;
-    font-size: 20px;
+    border-color: black;
     justify-content: center;
-    font-family: sunset_boulevard_2;
+    animation-name: words;
+    animation-duration: 2.5s;
+    transition: linear 2s ease-in;
+    background-color:green;
+    box-shadow:-18px 15px 18px black;
 }
 .navMenu a{
     color: rgb(223, 226, 218);
@@ -25,36 +33,34 @@
 
 .navList{
    font-size: 2em; 
-   animation-name: words;
-   animation-duration: 2.5s;
-   transition: linear 2s ease-in;
+   margin: 0 auto;
 }
 
-.title1{
-    
-    margin: 0 auto;
+.title{
+    display: flex;
+    margin: 40px auto;
+    min-width: 149px;
     max-width:35%;
     text-align: center;
     border:10%;
     border-radius:25px;
     border-style: solid;
     border-color: black;
-    display: flex;
     justify-content: center;
     animation-name: words;
     animation-duration: 2.5s;
     transition: linear 2s ease-in;
+    background-color:green;
+    box-shadow:-18px 15px 18px black;
 }
 
 .WhoAmI{
     max-width: 98%;
+    min-width: 886px;
     max-height: 316px;
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 10px;
-    border-style: solid;
-    border-radius: 20px;
 }
 
 .photo{
@@ -63,13 +69,14 @@
 
 .myPhoto{
     max-width: 25%;
+    min-width: 140px;
     box-shadow:-18px 15px 18px black;
-    border: 10px;
+    border: 4px;
     border-style: solid;
-    border-radius: 20px;
-    border-color: green;
+    border-radius:20px;
+    border-color: black;
     flex-grow: 1;
-    align-self: flex-end;
+    align-self: center;
     animation-name: photoIn;
     animation-duration: 2.5s;
     transition: linear 2s ease-in;
@@ -84,6 +91,7 @@
 
 .quote_text{
     font-family: sunset_boulevard_2;
+    min-width: 414px;
     font-size: 2em;
     color:rgb(11, 11, 11);
     text-shadow: .2em .2em 10px white;
@@ -98,20 +106,17 @@
 
 .education {
     display: flex;
-    font-family: sunset_boulevard_2;
+    font-family: sunset_boulevard_2; 
     border:40%;
-    border-radius:25em;
-    border-color:red;
-    justify-content: space-around;
+    border-radius:20px;
+    border-style: solid;
+    border-color:black;
     flex-direction: column;
     text-align: center;
+    min-width: 304px;
+    margin: 0 auto;
 }
 
-.title2{
-    max-width:100%;
-    margin: 0 auto;
-    color:black;
-}
 
 .skills{
     bottom: 3em;
@@ -227,7 +232,7 @@ input{
 }
 
 html{
-    background-color:rgb(15, 131, 173);/*linear-gradient(45deg, red,green,pink );*/
+    background:linear-gradient(45deg, red,green,pink );
     background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
