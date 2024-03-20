@@ -1,17 +1,15 @@
 .navMenu{
-    border: 8px;
-    border-style: solid;
-    border-color:rgb(113, 57, 57);
-    border-radius: 20px;
-    background-color: rgb(16, 20, 21);
-    max-width: 7em;
-    font-size: 20px;
-    margin: 0 auto;
-    justify-content: center;
     display: flex;
+    border: 4px;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 20px;
+    justify-content: center;
+    font-family: sunset_boulevard_2;
 }
 .navMenu a{
-    color: darkolivegreen;
+    color: rgb(223, 226, 218);
+    text-align: center;
 }
 
 .navMenu a:hover{
@@ -19,62 +17,83 @@
     cursor: pointer;
 }
 
-.projectNavMenu{
-    border: 4px;
-    border-style: solid;
-    border-color:rgb(113, 57, 57);
-    border-radius: 30px;
-    background-color: rgb(16, 20, 21);
-    max-width: 15%;
-    max-height: auto;
-    overflow: hidden;
-    font-size: 20px;
-    margin: 0 auto;
+.navChild{
     text-align: center;
+    margin: 0 auto;
+    
 }
 
-.projectNavMenu a{
-    padding:2%;
-    color: darkolivegreen;
+.navList{
+   font-size: 2em; 
+   animation-name: words;
+   animation-duration: 2.5s;
+   transition: linear 2s ease-in;
 }
 
-.projectNavMenu a:hover{
-    background-color: rgb(172, 173, 177);
+.title1{
+    
+    margin: 0 auto;
+    max-width:35%;
+    text-align: center;
+    border:10%;
+    border-radius:25px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    animation-name: words;
+    animation-duration: 2.5s;
+    transition: linear 2s ease-in;
+}
+
+.WhoAmI{
+    max-width: 98%;
+    max-height: 316px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 10px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.photo{
+    max-width: 50%;
 }
 
 .myPhoto{
     max-width: 25%;
     box-shadow:-18px 15px 18px black;
+    border: 10px;
+    border-style: solid;
     border-radius: 20px;
+    border-color: green;
+    flex-grow: 1;
+    align-self: flex-end;
     animation-name: photoIn;
     animation-duration: 2.5s;
-    position: absolute;
-    right: 4em;
-    top: 8em;
+    transition: linear 2s ease-in;
 }
 
 .quote{
-    position: relative;
-    bottom: 2em;
-    left: 3em;
     width: 40em;
     justify-content: center;
+    overflow: hidden;
+    
 }
 
 .quote_text{
     font-family: sunset_boulevard_2;
-    font-size: 3rem;
+    font-size: 2em;
     color:rgb(11, 11, 11);
     text-shadow: .2em .2em 10px white;
     max-height: 200px;
-    max-width: 85%;
-}
-
-.WhoAmI{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    max-width: 100%;
+    flex-grow: 3; 
+    align-self: flex-start;
+    animation-name: words;
+    animation-duration: 2.5s;
+    transition: linear 2s ease-in;
 }
 
 .education {
@@ -92,17 +111,6 @@
     max-width:100%;
     margin: 0 auto;
     color:black;
-}
-
-.title1{
-    background-color: darkorange;
-    margin: 0 auto;
-    max-width:35%;
-    text-align: center;
-    border:10%;
-    border-radius:25px;
-    display: flex;
-    justify-content: center;
 }
 
 .skills{
@@ -249,17 +257,17 @@ html{
 
 @keyframes photoIn{
     0%{
-        transform:translateX(16rem);
+        transform:translateX(-30rem);
     }
     
     100%{
-        transform:translateX(0em);
+        transform:translateX(.3em);
     }
 }
 
-@keyframes wordsSLide{
+@keyframes words{
     0%{
-        transform:translateX(16rem);
+        transform:translateX(16em);
     }
     
     100%{
