@@ -1,19 +1,13 @@
 .navMenu{
-    display: flex;
     margin: 40px auto;
     min-width: 149px;
-    max-width:35%;
+    width: 20%;
     text-align: center;
     border:10%;
     border-radius:25px;
     border-style: solid;
     border-color: black;
-    justify-content: center;
-    animation-name: words;
-    animation-duration: 2.5s;
-    transition: linear 2s ease-in;
-    background-color:green;
-    box-shadow:-18px 15px 18px black;
+    background-color: green;
 }
 .navMenu a{
     color: rgb(223, 226, 218);
@@ -21,19 +15,17 @@
 }
 
 .navMenu a:hover{
-    background-color: rgb(172, 173, 177);
+    color: black;
     cursor: pointer;
 }
 
 .navChild{
     text-align: center;
-    margin: 0 auto;
-    
+    margin: 20px auto;
 }
 
 .navList{
    font-size: 2em; 
-   margin: 0 auto;
 }
 
 .title{
@@ -54,7 +46,7 @@
     box-shadow:-18px 15px 18px black;
 }
 
-.getToKnowMe{
+.KnowMe{
     display: flex;
     border:10%;
     border-radius:25px;
@@ -62,12 +54,6 @@
     border-color: black;
     background-color: green;
     font-family: sunset_boulevard_2;
-    
-}
-
-.info{
-    justify-content: center;
-    align-self: center;
 }
 
 .photo{
@@ -85,7 +71,6 @@
     animation-name: photoIn;
     animation-duration: 2.5s;
     transition: linear 2s ease-in;
-    align-items: flex-start;
 }
 
 .WhoAmI{
@@ -146,6 +131,15 @@
     text-align:center;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
 
 .getToKnowMe{
   position: relative;  
@@ -253,11 +247,12 @@ input{
 }
 
 html{
-    background:linear-gradient(45deg, red,green,pink );
-    background-size:auto;
+    /*background:linear-gradient(45deg, red,green,pink );*/
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     color: black;
+    animation: backgroundChange 60s infinite linear;
 }
 
 .css{
@@ -284,7 +279,7 @@ html{
 
 @keyframes photoIn{
     0%{
-        transform:translateX(-30rem);
+        transform:translateX(30em);
     }
     
     100%{
@@ -299,6 +294,28 @@ html{
     
     100%{
         transform:translateX(0em);
+    }
+}
+
+@keyframes backgroundChange{
+    0%{
+        background:linear-gradient(45deg, red,green,pink );
+    }
+
+    25%{
+        background:linear-gradient(45deg, rgb(0, 255, 166),rgb(210, 195, 65),rgb(110, 98, 100) );
+    }
+
+    50%{
+        background:linear-gradient(45deg, rgb(254, 128, 162),green,pink );
+    }
+
+    75%{
+        background:linear-gradient(45deg, rgb(65, 63, 63),rgb(17, 148, 255),rgb(197, 166, 13) );
+    }
+
+    100%{
+        background:linear-gradient(45deg, red,green,pink );
     }
 }
 
