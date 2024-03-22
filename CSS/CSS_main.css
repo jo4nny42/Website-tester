@@ -4,11 +4,6 @@
     width: 20%;
     text-align: center;
     text-shadow: .2em 1em 10px rgb(255, 255, 255);
-   /* border:10%;
-    border-radius:25px;
-    border-style: solid;
-    border-color: black;
-    background-color: green;*/
 }
 .navMenu a{
     color: rgb(223, 226, 218);
@@ -31,7 +26,7 @@
 .title{
     display: flex;
     margin: 0 auto;
-    min-width: 149px;
+    min-width: 221.7px;
     max-width:35%;
     text-align: center;
     border:10%;
@@ -46,10 +41,10 @@
     box-shadow:-18px 15px 18px black;
 }
 
+
 .meContainer{
     display:flex;
     flex-direction: row;
-    background-color: rgb(95, 92, 92);
     min-width: 622px;
 }
 
@@ -67,8 +62,9 @@
 
 .Info p{
     font-size: 1.5em;
-    text-shadow:-18px 20px 18px black;
+    text-shadow: .2em 1em 10px rgba(180, 33, 173, 0.5);
     margin: 0 auto;
+    color: white;
 }
 
 .photo{
@@ -98,8 +94,6 @@
     max-height: 316px;
     display: flex;
     justify-content: center;
-    background-color: rgb(95, 92, 92);
-
 }
 
 .quote{
@@ -117,7 +111,7 @@
     font-family: sunset_boulevard_2;
     font-size: 1.5em;
     color:rgb(11, 11, 11);
-    text-shadow: .2em .5em 10px rgb(255, 255, 255);
+    text-shadow: .2em 1em 10px rgba(180, 33, 173, 0.5);
     max-height: 200px;
     max-width: 100%;
     min-width: 600px;
@@ -126,7 +120,6 @@
 }
 
 .edu{
-    background-color: rgb(52, 66, 96);
     min-width: 622px;
 }
 
@@ -151,7 +144,7 @@
 }
 
 .ac li, .Forsyth li{
-    font-size: .5em;
+    font-size: .4em;
 }
 
 .skills{
@@ -160,7 +153,6 @@
     font-size: 20px;
     text-align:center;
     justify-content: center;
-    background-color: rgb(52, 66, 96);
     min-width: 622px;
 }
 
@@ -180,11 +172,18 @@
     transition: linear 2s ease-in;
     background-color:green;
     box-shadow:-18px 15px 18px black;
+    gap:2em;
 }
 
 .projectNavMenu{
     display: flex;
     justify-content: center;
+    gap:2em;
+}
+
+.projectNavMenu h1{
+    color: white;
+    text-shadow: .2em .5em 10px white;
 }
 
 .Cards:nth-child(4){
@@ -197,13 +196,6 @@
 
 .name{
     color:white;
-}
-
-p{
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    text-align: left;
 }
 
 .contact{
@@ -232,15 +224,18 @@ p{
     gap: 2em;
     flex-wrap: wrap;
     min-width: 320px;
+    transition: all 4000ms ease-in;
 }
 .Cards{
     box-shadow:18px 15px 9px black;
     background-color: rgb(71, 65, 65);
     border-radius: 30px;
     margin: 0 auto;
-    transition: all 4000ms;
+    transition: all 4000ms ease-in;
     max-width: 20em;
     overflow: hidden;
+    animation-name: words;
+    animation-duration: 2.5s;
 }
 
 .CardInfo{
@@ -265,6 +260,7 @@ p{
     box-shadow:-20px -30px 18px black;
     max-width:30em;
 }
+
 
 li{
     color:white;
@@ -297,11 +293,6 @@ html{
     width: 100vw;
     height: 100vh;
     /*animation: backgroundChange 60s infinite linear;*/
-}
-
-body{
-    width: 100vw;
-    height: 100vh;
 }
 
 .css{
@@ -382,33 +373,3 @@ body{
         background-repeat: no-repeat;
     }
 }
-
-/* Mobile small - 320px
-@media only screen and (min-width:320px){
-    h1 p{
-       max-width: 50%;
-       height: 20%;
-       text-overflow: clip;
-       overflow: hidden;
-       font-size: 1em; 
-       border-radius: 10px;
-       border: 40%;
-       margin: 0 auto;
-    }
-
-    p{
-        font-size: 12px;
-    }
-
-    .myPhoto{
-        position: absolute;
-        right: -8em;
-        top: 6em;
-        width: 28%;
-    }
-} */
-/* Mobile medium - 375px */
-
-/* Mobile Large - 425px*/
-
-/* Tablet - 768px*/
