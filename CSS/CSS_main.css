@@ -181,13 +181,9 @@
     gap:2em;
 }
 
-.projectNavMenu h1{
+.projectNavMenu a{
     color: white;
-    text-shadow: .2em .5em 10px white;
-}
-
-.Cards:nth-child(4){
-    flex-grow: 3;
+    text-shadow: .2em .4em 18px white;
 }
 
 .indent{
@@ -221,17 +217,15 @@
 
 .container{
     display:flex;
-    gap: 2em;
     flex-wrap: wrap;
     min-width: 320px;
-    transition: all 4000ms ease-in;
 }
 .Cards{
     box-shadow:18px 15px 9px black;
     background-color: rgb(71, 65, 65);
     border-radius: 30px;
     margin: 0 auto;
-    transition: all 4000ms ease-in;
+    transition: all 1000ms ease-in;
     max-width: 20em;
     overflow: hidden;
     animation-name: words;
@@ -261,6 +255,9 @@
     max-width:30em;
 }
 
+.Cards:nth-child(4){
+    flex-grow: 10;
+}
 
 li{
     color:white;
